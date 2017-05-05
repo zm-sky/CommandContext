@@ -14,7 +14,9 @@ import java.util.List;
 public interface CommandContext{
     public void registrarTurno(int turno);
     public void iniciarJuego(String frase);
+    public void finalizarJuego(String ganador);
     public void avanzarTurno();
-    public void setGanador(String ganador);
-    public void agregarLetra(Character letra);
+    public void agregarLetraIncorrecta(Character letra);
+    public void resetearTimer();
+    public void agregarLetraCorrecta(Character letra);
 }
